@@ -27,6 +27,7 @@ The executable will be placed in the `build` directory. From within `build`, you
 Or to specify a map file:
 ```
 ./OSM_A_star_search -f ../<your_osm_file.osm>
+```
 
 ### Reference
 - [2D Graphics library : IO2D](https://github.com/cpp-io2d/P0267_RefImpl/tree/master/P0267_RefImpl/Samples/maps)

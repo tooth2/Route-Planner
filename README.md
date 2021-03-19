@@ -7,7 +7,7 @@ a path along the city streets to connect the start and end.
 
 ## Code Structure
 The src directory contains the following files:
-``₩
+```
 root
 |--src
 |   |--main.cpp
@@ -18,6 +18,7 @@ root
 |--build
 |--test
 ```
+
 The main.cpp controls the flow of the program, accomplishing four primary tasks:
 
 - The OSM data is read into the program.

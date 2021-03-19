@@ -7,15 +7,16 @@ a path along the city streets to connect the start and end.
 
 ## Code Structure
 The src directory contains the following files:
-```
-|-src
-   |--main.cpp
-   |--model.h and model.cpp
-   |--render.hand render.cpp
-   |--route_model.h and route_model.cpp
-   |--route_planner.h and route_planner.cpp
---build
---test
+``₩
+root
+|--src
+|   |--main.cpp
+|   |--model.h and model.cpp
+|   |--render.hand render.cpp
+|   |--route_model.h and route_model.cpp
+|   |--route_planner.h and route_planner.cpp
+|--build
+|--test
 ```
 The main.cpp controls the flow of the program, accomplishing four primary tasks:
 

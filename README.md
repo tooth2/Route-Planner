@@ -5,6 +5,25 @@ a path along the city streets to connect the start and end.
 
 - A route planner that plots a path between two points on a map using real map data from the OpenStreeMap project
 
+## Code Structure
+The src directory contains the following files:
+```
+|-src
+   |--main.cpp
+   |--model.h and model.cpp
+   |--render.hand render.cpp
+   |--route_model.h and route_model.cpp
+   |--route_planner.h and route_planner.cpp
+--build
+--test
+```
+The main.cpp controls the flow of the program, accomplishing four primary tasks:
+
+- The OSM data is read into the program.
+- A RouteModel object is created to store the OSM data in usable data structures.
+- A RoutePlanner object is created using the RouteModel. This planner will eventually carry out the A* search on the model data and store the search results in the RouteModel.
+- The RouteModel data is rendered using the IO2D library.
+
 ## A* search implementation
 
 

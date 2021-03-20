@@ -1,7 +1,7 @@
 # A* Search 
 
 ## Background
-A* algorithm is very similar to other search algorithms you may have seen before, such as  breadth-first search, , except for the additional step of computing a heuristic and using that heuristic (in addition to the cost) to find the next node. Following pseudocode shows the complete algorithm in a single function:
+A* algorithm is very similar to other search algorithms, such as  breadth-first search, except for the additional step of computing a heuristic and using that heuristic (in addition to the cost) to find the next node. Following is the pseudocode function:
 
 **Search( grid, initial_point, goal_point )**:
 1. Initialize an empty list of open nodes.

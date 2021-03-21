@@ -36,11 +36,12 @@ root
 |--test: contains unit tests, implemented using the Google Test framework
 |--thirdparty: third party libraries included with this project
 ```
-src
-- The OSM data is read into the program.
+### RoutePlanner implementation
 - A RouteModel object is created to store the OSM data in usable data structures.
 - A RoutePlanner object is created using the RouteModel. This planner will eventually carry out the A* search on the model data and store the search results in the RouteModel.
 - The RouteModel data is rendered using the IO2D library.
+- The model.h and model.cpp files come from the IO2D example code. 
+- the model.h file, as the method implementations in model.cpp : These files are used to define the data structures and methods that read in and store OSM data. OSM data is stored in a Model class which contains nested structs for Nodes, Ways, Roads, and other OSM objects. 
 - RouteModel: These files contain classes which are used to extend the Model and Node data structures from model.h and model.cpp using class inheritance. Remember that inheritance in this case will allow you to use all of the public methods and attributes of the Model class and Node struct in the derived RouteModel and RouteModel::Node classes.
 The reason for extending the existing Model class and Node struct is to include additional methods and variables which are useful for A* search. In particular, the new RouteModel::Node class now allows nodes to store the following:
     - the h-value,
@@ -48,13 +49,6 @@ The reason for extending the existing Model class and Node struct is to include 
     - a "visited" flag, a vector of pointers to neighboring nodes.
 - The render.h and render.cpp files come from the IO2D. These take map data that is stored in a Model object and render that data as a map including three methods which render the start point, end point, and path from the A* search
 
-
-### RoutePlanner implementation
-- A RouteModel object is created to store the OSM data in usable data structures.
-- A RoutePlanner object is created using the RouteModel. This planner will eventually carry out the A* search on the model data and store the search results in the RouteModel.
-- The RouteModel data is rendered using the IO2D library.
-- The model.h and model.cpp files come from the IO2D example code. 
-- the model.h file, as the method implementations in model.cpp : These files are used to define the data structures and methods that read in and store OSM data. OSM data is stored in a Model class which contains nested structs for Nodes, Ways, Roads, and other OSM objects. 
 ### User Input 
 - A user should be able to input values between 0 and 100 for the start x, start y, end x, and end y coordinates of the search, and the result shows a path between the points.
 - The coordinate (0, 0) should roughly correspond with the lower left corner of the map, and (100, 100) with the upper right.

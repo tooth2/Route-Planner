@@ -11,9 +11,16 @@ OpenStreetMap data can come in several different formats. The data that is used 
 
 ### OSM(OpenStreetMap) Data Format
 OSM XML File is mainly composed of three important XML type elements; Nodes, Ways, and Relations.
-* Node: A single point on the bus route 
-* Way: A collection of roads the form the entire route
-* Relation: A collection of points that form a road on the bus route
+* Node
+    * one of the most basic elements in the OpenStreetMap data model. e.g. A single point on the bus route. 
+    * Each node indicates a single point with an identifier id, latitude lat, and longitude lon.  
+* Way 
+    * An ordered list of nodes that represents a feature in the map. e.g. A collection of roads the form the entire route.  
+    * Each way has at least one tag which denotes some information about the way, and each way also belongs to at least one relation.
+* Relation: 
+    * a data structure which documents a relationship between other data elements 
+    * A route relation: A collection of points that form a road on the bus route
+    * A multipolygon: an area with holes, where the outer and inner boundaries of the area are given by two ways.
 
 ## Code Structure
 The src directory contains the following files:

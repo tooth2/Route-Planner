@@ -43,10 +43,10 @@ The main.cpp controls the flow of the program, accomplishing four primary tasks:
 - A RoutePlanner object is created using the RouteModel. This planner will eventually carry out the A* search on the model data and store the search results in the RouteModel.
 - The RouteModel data is rendered using the IO2D library.
 
-## A* search implementation
+### A* search implementation
 
 
-## User Input 
+### User Input 
 - A user should be able to input values between 0 and 100 for the start x, start y, end x, and end y coordinates of the search, and the result shows a path between the points.
 - The coordinate (0, 0) should roughly correspond with the lower left corner of the map, and (100, 100) with the upper right.
 
@@ -67,5 +67,6 @@ Or to specify a map file:
 ./OSM_A_star_search -f ../<your_osm_file.osm>
 ```
 
-### Reference
+## Reference
+- [Open Street Map](https://www.openstreetmap.org/)
 - [2D Graphics library : IO2D](https://github.com/cpp-io2d/P0267_RefImpl/tree/master/P0267_RefImpl/Samples/maps)

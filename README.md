@@ -53,8 +53,9 @@ The reason for extending the existing Model class and Node struct is to include 
 - A user should be able to input values between 0 and 100 for the start x, start y, end x, and end y coordinates of the search, and the result shows a path between the points.
 - The coordinate (0, 0) should roughly correspond with the lower left corner of the map, and (100, 100) with the upper right.
 ### Result 
-|(10,10,90,90) | result | (5,5,50,50)|
-|![1](route1.png)|![3](route3.png) | ![5](route5.png)| 
+|(5,5,75,75)| (5,5,45,50)|
+|--|--|
+|![2](route1.png)| ![5](route5.png)| 
 ### Dependencies for Runtime Environment
 * [cmake >= 3.11.3](https://cmake.org/install/)
 * [make >= 4.1](https://developer.apple.com/xcode/features/)

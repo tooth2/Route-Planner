@@ -55,7 +55,7 @@ The reason for extending the existing Model class and Node struct is to include 
 ### Result 
 |(5,5,75,75)| (5,5,45,50)|
 |--|--|
-|![compile](compile.png)|![test](test.png)|
+|<img src="compile.png" width=400 />)|<img src="test.png" width=400 />|
 |![2](route2.png)| ![5](route5.png)| 
 ### Dependencies for Runtime Environment
 * [cmake >= 3.11.3](https://cmake.org/install/)

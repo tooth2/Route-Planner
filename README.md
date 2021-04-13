@@ -37,6 +37,8 @@ root
 |--thirdparty: third party libraries included with this project
 ```
 ### RoutePlanner implementation
+![route_planner](route_planner.png)
+
 - A RouteModel object is created to store the OSM data in usable data structures.
 - A RoutePlanner object is created using the RouteModel. This planner will eventually carry out the A* search on the model data and store the search results in the RouteModel.
 - The RouteModel data is rendered using the IO2D library.

@@ -1,4 +1,5 @@
-# A* Search 
+# A* Search - Route Planning Algorithm
+A implementation of a route-planning algorithm like the one used in Google Maps to calculate the shortest path between two points on a map. A data-structure to represent points on a map and then implement A* algorithm to find shortest path.
 
 ## Background
 A* algorithm is very similar to other search algorithms, such as  breadth-first search, except for the additional step of computing a heuristic and using that heuristic (in addition to the cost) to find the next node. Following is the pseudocode function:

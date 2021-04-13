@@ -55,7 +55,7 @@ The reason for extending the existing Model class and Node struct is to include 
 - A user should be able to input values between 0 and 100 for the start x, start y, end x, and end y coordinates of the search, and the result shows a path between the points.
 - The coordinate (0, 0) should roughly correspond with the lower left corner of the map, and (100, 100) with the upper right.
 ### Result 
-|(5,5,75,75)| (5,5,45,50)|
+|source(5,5) --> target(75,75)| source(5,5) --> target(45,50)|
 |--|--|
 |<img src="compile.png" width=400 />)|<img src="test.png" width=400 />|
 |![2](route2.png)| ![5](route5.png)| 
